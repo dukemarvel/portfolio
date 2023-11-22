@@ -52,10 +52,17 @@ const HeroSection = () => {
   return (
     <HeroContainer>
       <HeroTitle>Beyond Code: Pioneering Full-Stack Excellence. A Journey Through Layers of Digital Craftsmanship.</HeroTitle>
-      <HeroSubtitle>I am Joseph Blackduke, a passionate Full Stack Developer.</HeroSubtitle>
-      <HeroButton whileHover="whileHover" variants={buttonVariants}>
+      <HeroSubtitle>I am BlackDuke Joseph David, a passionate Full Stack Developer.</HeroSubtitle>
+      <HeroButton 
+        whileHover="whileHover" 
+        variants={buttonVariants} 
+        as="a" 
+        href="/resume.pdf" 
+        download
+      >
         RESUME
       </HeroButton>
+
     </HeroContainer>
   );
 };
