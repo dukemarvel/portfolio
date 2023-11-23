@@ -57,7 +57,7 @@ const HeroSection = () => {
         whileHover="whileHover" 
         variants={buttonVariants} 
         as="a" 
-        href="/resume.pdf" 
+        href={process.env.PUBLIC_URL + "/resume.pdf"}
         download
       >
         RESUME

@@ -148,7 +148,7 @@ const Header = () => {
           </NavLinks>
 
           <NavLinks className="personal" menuOpen={menuOpen}>
-            <a href="www.linkedin.com/in/joseph-blackduke" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/joseph-blackduke" target="_blank" rel="noopener noreferrer">
               <LinkedInIcon color="secondary" fontSize="large" sx={{ color: blue[500] }}/>
             </a>
             <a href="https://github.com/dukemarvel/" target="_blank" rel="noopener noreferrer">
