@@ -104,7 +104,7 @@ const AboutMe = () => {
     <AboutSection>
       <ContentContainer>
         <LeftContent>
-          <Title>Hello, I'm XXX</Title>
+          <Title>Hello, I'm Joseph BlackDuke</Title>
 
           <Description>
             I'm a seasoned Fullstack Developer with a knack for transforming intricate ideas into real-world solutions. With expertise in React, Python, Django, and Web3, my 5+ year journey in the tech industry has been a testament to my commitment towards integrating state-of-the-art technologies with efficient engineering.
