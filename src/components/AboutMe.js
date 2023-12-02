@@ -18,9 +18,10 @@ const ContentContainer = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  padding-left: 6rem;
+  padding-left: 0;
 
-  @media (max-width: 768px) {
+
+  @media (max-width: 720px) {
     flex-direction: column;
     align-items: center;
   }
@@ -29,7 +30,7 @@ const ContentContainer = styled.div`
 const LeftContent = styled.div`
   flex: 1;
 
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     order: 2; /* Move this content to the middle for small screens */
   }
 `;
@@ -40,7 +41,7 @@ const MiddleContent = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     order: 1; /* Move this content to the top for small screens */
     margin-bottom: 20px; /* Add some space between the profile box and other content */
   }
@@ -51,7 +52,7 @@ const RightContent = styled.div`
   display: flex;
   justify-content: flex-end;
 
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     order: 3; /* Move this content to the bottom for small screens */
   }
 `;
@@ -60,7 +61,7 @@ const Title = styled.h2`
   font-size: 24px;
   margin-bottom: 10px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     font-size: 12px;
   }
 `;
@@ -71,7 +72,7 @@ const Description = styled.p`
   text-align: left;
   color: white;
 
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     font-size: 8px;
   }
 `;
@@ -81,7 +82,7 @@ const ProjectCounts = styled.div`
   color: white;
   margin-top: 20px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     margin-top: 10px;
   }
 `;

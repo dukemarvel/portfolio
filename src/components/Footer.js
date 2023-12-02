@@ -3,16 +3,21 @@ import styled from 'styled-components';
 
 const FooterContainer = styled.footer`
   background-color: ; /* Dark background color */
-  padding: 20px 10px;
+  padding: 20px 0px;
   color: white; /* Accent color for text */
   text-align: center;
   border-top: 1px solid white; /* White line at the top */
+
+  @media (max-width: 720px){
+    border-top: 1px solid white; /* White line at the top */
+  }
+  
 `;
 
 const FooterTitle = styled.h2`
   font-size: 24px;
   margin-bottom: 10px;
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     margin-bottom: 5px;
     font-size: 12px
   }
@@ -21,7 +26,7 @@ const FooterTitle = styled.h2`
 const FooterText = styled.p`
   font-size: 16px;
   margin: 10px 0;
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     margin: 5px 0;
     font-size: 8px
   }

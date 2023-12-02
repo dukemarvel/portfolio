@@ -18,7 +18,7 @@ const HeroTitle = styled.h1`
   font-size: 3rem;
   margin-bottom: 1rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     font-size: 2rem;
     margin-top: 1rem;
   }
@@ -28,7 +28,7 @@ const HeroSubtitle = styled.p`
   font-size: 1.5rem;
   margin-bottom: 2rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     font-size: 1rem;
     margin-bottom: 1rem;
   }
