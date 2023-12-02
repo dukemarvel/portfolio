@@ -60,6 +60,7 @@ const RightContent = styled.div`
 const Title = styled.h2`
   font-size: 24px;
   margin-bottom: 10px;
+  padding-left: 45px;
 
   @media (max-width: 720px) {
     font-size: 12px;
@@ -71,6 +72,7 @@ const Description = styled.p`
   margin-bottom: 10px;
   text-align: left;
   color: white;
+  padding-left: 45px;
 
   @media (max-width: 720px) {
     font-size: 8px;

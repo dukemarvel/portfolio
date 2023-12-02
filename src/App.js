@@ -13,12 +13,14 @@ function App() {
     <div className="App">
     
         <Header />
+          <main>
           <Routes>
             <Route path="/" element={<HeroSection />} />
             <Route path="/aboutme" element={<AboutMe />} />
             <Route path="/ai" element={<AIInnovations />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
+          </main>
           <Footer />
     </div>
   );
