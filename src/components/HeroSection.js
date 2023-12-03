@@ -34,19 +34,7 @@ const HeroSubtitle = styled.p`
   }
 `;
 
-{/* const StyledButton = styled.button`
-  padding: 1rem 2rem;
-  border: none;
-  background: linear-gradient(141deg, cyan 0%, rebeccapurple 40%, deeppink 90%);
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  &:hover {
-    background-color: #2980b9;
-  }
-  border-radius: 15px;
-`; */}
+
 
 const StyledButton = styled.button`
   color: #fff;

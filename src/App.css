@@ -10,7 +10,7 @@ html, body, .App {
 }
 
 body {
-  background-color: black;
+  background-color: #201E1F;
   overflow-y: auto; /* This ensures content taller than the viewport is scrollable. */
 }
 

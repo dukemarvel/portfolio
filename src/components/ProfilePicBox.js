@@ -11,12 +11,12 @@ const ProfilePicBoxContainer = styled.div`
   padding: 20px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* White box shadow for white edges */
   margin-bottom: 20px; /* Adjust as needed */
-  width: 300px;
+  width: 200px;
   height: 300px;
 `;
 
 const ProfileImage = styled.img`
-  width: 250px;
+  width: 200px;
   height: 250px;
   border-radius: 50%;
   margin-top: 20px;

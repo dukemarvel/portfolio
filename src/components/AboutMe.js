@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import ProfilePicBox from './ProfilePicBox';
+import Skills from './Skills';
+import Experience from './Experience';
 
 
 
@@ -9,7 +11,7 @@ const AboutSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 1rem 5%;
   color: white;
 `;
 
@@ -18,7 +20,7 @@ const ContentContainer = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  padding-left: 0;
+
 
 
   @media (max-width: 720px) {
@@ -57,22 +59,13 @@ const RightContent = styled.div`
   }
 `;
 
-const Title = styled.h2`
-  font-size: 24px;
-  margin-bottom: 10px;
-  padding-left: 45px;
-
-  @media (max-width: 720px) {
-    font-size: 12px;
-  }
-`;
 
 const Description = styled.p`
   font-size: 16px;
   margin-bottom: 10px;
   text-align: left;
   color: white;
-  padding-left: 45px;
+  
 
   @media (max-width: 720px) {
     font-size: 8px;
@@ -107,10 +100,8 @@ const AboutMe = () => {
     <AboutSection>
       <ContentContainer>
         <LeftContent>
-          <Title>Hello, I'm Joseph BlackDuke</Title>
-
           <Description>
-            I'm a seasoned Fullstack Developer with a knack for transforming intricate ideas into real-world solutions. With expertise in React, Python, Django, and Web3, my 5+ year journey in the tech industry has been a testament to my commitment towards integrating state-of-the-art technologies with efficient engineering.
+          Hello, I'm Joseph, I'm a seasoned Fullstack Developer with a knack for transforming intricate ideas into real-world solutions. With expertise in React, Python, Django, and Web3, my 5+ year journey in the tech industry has been a testament to my commitment towards integrating state-of-the-art technologies with efficient engineering.
           </Description>
 
           <Description>
@@ -129,8 +120,12 @@ const AboutMe = () => {
         <RightContent>
           <ProjectCounts></ProjectCounts>
         </RightContent>
+
+       
+
       </ContentContainer>
-    
+      <Skills/>
+      <Experience/>
     </AboutSection>
   );
 };
