@@ -10,6 +10,13 @@ html, body, .App {
 }
 
 body {
+  /*background: url('/src/images/bg.png') no-repeat center center/cover;*/
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: auto; /* This ensures content taller than the viewport is scrollable. */
+  
   background-color: #201E1F;
   overflow-y: auto; /* This ensures content taller than the viewport is scrollable. */
 }
