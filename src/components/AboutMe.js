@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import ProfilePicBox from './ProfilePicBox';
 import Skills from './Skills';
 import Experience from './Experience';
+import Centered from './Centered';
 
 
 

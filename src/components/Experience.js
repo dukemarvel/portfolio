@@ -1,70 +1,101 @@
+import React from 'react';
 import styled from 'styled-components';
+import '../styles/Experience.css';
 
-const CenteredContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Roboto;
-  width: 70%;
-`;
-
-const CenteredHeading = styled.h2`
+const CustomHeading1 = styled.h1`
   text-align: center;
   margin: 20px;
+  font-weight: bold;
+  font-size: 40px;
 `;
 
-const ExperienceContainer = styled.div`
+const Role = styled.h2`
+  
+  font-size: 24px;
+  font-weight: bold;
   color: white;
-  background-color: #201E1F; /* warm black */
-  padding: 20px; /* Add padding as needed */
+
+  @media (max-width: 720px){
+    font-size: 10px;
+  }
+  
 `;
 
-const JobContainer = styled.div`
-  margin-bottom: 2rem;
+const Company = styled.h3`
+
+  font-size: 16px;
+  color: cyan;
+
+  @media (max-width: 720px){
+    font-size: 8px;
+  }
 `;
 
-const DateText = styled.p`
-  font-weight:  400;
+const Date = styled.span`
+  font-weight: 500;
+  color: hsla(0,0%,96%,.75);
+
+  @media (max-width: 720px){
+    font-size: 8px;
+  }
+  
 `;
 
-const BulletList = styled.ul`
-  list-style-type: disc;
-  list-style-position: inside;
-  padding-left: 1rem;
-  text-align: justify;
+const Doings = styled.p`
+
+  @media (max-width: 720px){
+    font-size: 8px;
+  }
 `;
 
 const Experience = () => {
   return (
-    <CenteredContainer>
-      <ExperienceContainer>
-        <CenteredHeading>Experience</CenteredHeading>
-        <JobContainer>
-        Fullstack Developer||AI & Web3 Developer
-          <h3>@DotLaunch</h3>
-          <DateText>Nov 2022 - Present | Dubai, UAE</DateText>
-          <BulletList>
-            <li>
-              Spearheaded the development of an AI-driven recommendation engine, enhancing e-commerce
-              platforms with real-time insights and personalized product suggestions, resulting in a 35% sales
-              boost
-            </li>
-          </BulletList>
-        </JobContainer>
-        <JobContainer>
-            Fullstack Web Develope
-          <h3>@UltraMin Inc.</h3>
-          <DateText>Dec 2020 - Oct 2022 | Dubai, UAE</DateText>
-          <BulletList>
-            <li>
+    <div className="container">
+      <CustomHeading1>Experience</CustomHeading1>
+      <ul>
+      <li>
+          <Role>Full Stack Development Lead || Python Engineer (Part Time)</Role>
+          <Company>@Arts2Service (Startup)</Company>
+          <Date>Sept 2023 - Present</Date>
+          <Doings>
+            As the Full Stack Lead, I orchestrate the entire development process, focusing mainly on Python
+            backend development. I also guide frontend implementations and personally convert intern’s
+            code to React.
+          </Doings>
+        </li>
+        <li>
+          <Role>Fullstack Developer || AI & Web3 Developer</Role>
+          <Company>@DotLaunch</Company>
+          <Date>Nov 2022 - Present | Dubai, UAE</Date>
+          <Doings>
+            Spearheaded the development of an AI-driven recommendation engine, enhancing e-commerce
+            platforms with real-time insights and personalized product suggestions, resulting in a 35% sales
+            boost
+          </Doings>
+        </li>
+        <li>
+          <Role>Fullstack Web Developer</Role>
+          <Company>@UltraMind Inc.</Company>
+          <Date>Dec 2020 - Oct 2022 | Dubai, UAE</Date>
+          <Doings>
             Played an instrumental role in developing consumer-centric features and applications using
-            Python and Django. Adopted test-driven development and pair-based programming methodologies to ensure the delivery of high-quality, bug-free features, leading to an enhanced
-            user experience and increased customer satisfaction
-            </li>
-          </BulletList>
-        </JobContainer>
-      </ExperienceContainer>
-    </CenteredContainer>
+            Python and Django. Adopted test-driven development and pair-based programming methodologies to ensure
+            the delivery of high-quality, bug-free features, leading to an enhanced user experience and increased
+            customer satisfaction
+          </Doings>
+        </li>
+        <li>
+          <Role>Frontend Engineer</Role>
+          <Company>@Artburst</Company>
+          <Date>Dec 2018 - Nov 2020</Date>
+          <Doings>
+            Played a key role in the frontend development of a large-scale e-commerce website using
+            React, integrated with Django for backend operations. This contributed to a 20% sales
+            increase in the first month of launch.
+          </Doings>
+        </li>
+      </ul>
+    </div>
   );
 };
 

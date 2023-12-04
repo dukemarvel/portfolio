@@ -31,7 +31,7 @@ function Skill({ source, alt, title }) {
 function Skills() {
   return (
     <SkillsContainer>
-      <h2>My Tech Stack</h2>
+      <h2 style={{ fontWeight: 'bold', fontSize: '40px'}}>My Tech Stack</h2>
       <h1 style={{ marginTop: '20px' }}>Languages</h1>
       <SkillsGrid>
         {/*Gpt separate Languages from Frameworks and dev tools */}
