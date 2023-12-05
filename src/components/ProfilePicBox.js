@@ -9,18 +9,27 @@ const ProfilePicBoxContainer = styled.div`
   background-color: #000000; /* Black background color */
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* White box shadow for white edges */
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.9); /* White box shadow for white edges */
   margin-bottom: 20px; /* Adjust as needed */
-  width: 200px;
-  height: 300px;
+  width: 390px;
+  height: 400px;
+
+  @media (max-width: 720px){
+    width: 280px;
+    height: 300px;
+  }
 `;
 
 const ProfileImage = styled.img`
-  width: 200px;
-  height: 250px;
+  width: 300px;
+  height: 400px;
   border-radius: 50%;
-  margin-top: 20px;
   object-fit: cover;
+
+  @media (max-width: 720px){
+    width: 200px;
+    height: 250px;
+  }
 `;
 
 

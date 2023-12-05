@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import ProfilePicBox from './ProfilePicBox';
 import Skills from './Skills';
 import Experience from './Experience';
-import Centered from './Centered';
+
 
 
 
@@ -21,8 +21,8 @@ const ContentContainer = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-
-
+  padding: 20px;
+  gap: 10px;
 
   @media (max-width: 720px) {
     flex-direction: column;
@@ -32,7 +32,6 @@ const ContentContainer = styled.div`
 
 const LeftContent = styled.div`
   flex: 1;
-
   @media (max-width: 720px) {
     order: 2; /* Move this content to the middle for small screens */
   }
@@ -43,10 +42,12 @@ const MiddleContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 80px;
 
   @media (max-width: 720px) {
     order: 1; /* Move this content to the top for small screens */
     margin-bottom: 20px; /* Add some space between the profile box and other content */
+    padding-left: 0px;
   }
 `;
 
@@ -54,6 +55,7 @@ const RightContent = styled.div`
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  
 
   @media (max-width: 720px) {
     order: 3; /* Move this content to the bottom for small screens */
@@ -74,13 +76,53 @@ const Description = styled.p`
 `;
 
 const ProjectCounts = styled.div`
-  font-size: 16px;
   color: white;
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: 720px) {
     margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 45px;
   }
+
+  
+`;
+
+const CountDiv = styled.div`
+  margin-bottom: 50px;
+  line-height: 1;
+  text-align: right;
+
+  @media(max-width: 720px){
+    text-align: center;
+    align-items: center;
+  }
+  
+`;
+
+const Count = styled.div`
+  font-size: 80px;
+  font-weight: bold;
+
+  @media(max-width: 720px){
+    font-size: 45px;
+  }
+
+  
+`;
+
+const Text = styled.div`
+  font-size: 24px;
+  color: hsla(0,0%,96%,.75);
+
+  @media(max-width: 720px){
+    text-align: justify;
+    font-size: 12px;
+    
+  }
+
 `;
 
 const BoxContainer = styled.div`
@@ -119,7 +161,20 @@ const AboutMe = () => {
         </MiddleContent>
 
         <RightContent>
-          <ProjectCounts></ProjectCounts>
+          <ProjectCounts>
+            <CountDiv>
+              <Count>50+</Count>
+              <Text>Satisfied Clients</Text>
+            </CountDiv>
+            <CountDiv>
+              <Count>40+</Count>
+              <Text>Projects Completed</Text>
+            </CountDiv>
+            <CountDiv>
+              <Count>4+</Count>
+              <Text>Years Of Experience</Text>
+            </CountDiv>
+          </ProjectCounts>
         </RightContent>
 
        
