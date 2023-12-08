@@ -21,7 +21,7 @@ const StyledLink = styled(Link)`
     color: #3498db;
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 780px) {
   color: black;
   }
 `;
@@ -40,7 +40,7 @@ const LinksContainer = styled.div`
   align-items: center;
   width: 100%;
   
-  @media (max-width: 720px) {
+  @media (max-width: 780px) {
     flex-direction: column;
     //gap: 1rem;
     display: ${({ menuOpen }) => (menuOpen ? 'flex' : 'none')};
@@ -62,7 +62,7 @@ const NavLinks = styled.div`
   display: flex;
   gap: 2rem;
 
-  @media (max-width: 720px) {
+  @media (max-width: 780px) {
     flex-direction: column;
     gap: 1rem;
 
@@ -95,7 +95,7 @@ const LogoContainer = styled.div`
   border-radius: 50%;
   background: linear-gradient(141deg, cyan 0%, rebeccapurple 40%, deeppink 90%);
 
-  @media (max-width: 720px) {
+  @media (max-width: 780px) {
     top: 60%;
   }
 `;
@@ -119,7 +119,7 @@ const Hamburger = styled.div`
     background-color: #fff;
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 780px) {
     display: flex;
   }
 `;

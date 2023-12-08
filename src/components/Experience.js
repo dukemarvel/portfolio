@@ -15,7 +15,7 @@ const Role = styled.h2`
   font-weight: bold;
   color: white;
 
-  @media (max-width: 720px){
+  @media (max-width: 780px){
     font-size: 10px;
   }
   
@@ -26,7 +26,7 @@ const Company = styled.h3`
   font-size: 16px;
   color: cyan;
 
-  @media (max-width: 720px){
+  @media (max-width: 780px){
     font-size: 8px;
   }
 `;
@@ -35,7 +35,7 @@ const Date = styled.span`
   font-weight: 500;
   color: hsla(0,0%,96%,.75);
 
-  @media (max-width: 720px){
+  @media (max-width: 780px){
     font-size: 8px;
   }
   
@@ -43,7 +43,7 @@ const Date = styled.span`
 
 const Doings = styled.p`
 
-  @media (max-width: 720px){
+  @media (max-width: 780px){
     font-size: 8px;
   }
 `;
