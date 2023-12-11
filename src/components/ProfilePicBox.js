@@ -7,12 +7,15 @@ const ProfilePicBoxContainer = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: #000000; /* Black background color */
-  border-radius: 10px;
+  border-radius: 15px 50px 30px;
   padding: 20px;
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.9); /* White box shadow for white edges */
   margin-bottom: 20px; /* Adjust as needed */
   width: 390px;
   height: 400px;
+  border-top: 2px solid white;
+	border-left: 2px solid white;
+	border-bottom: 15px solid white;
+	border-right: 15px solid white;
 
   @media (max-width: 780px){
     width: 280px;
