@@ -10,7 +10,7 @@ const FooterContainer = styled.footer`
   border-top: 1px solid white; /* White line at the top */
   
 
-  @media (max-width: 780px){
+  @media (max-width: 720px){
     flex-direction: column-reverse;
     text-align: center;
     border-top: 1px solid white; /* White line at the top */
@@ -23,7 +23,7 @@ const FooterContainer = styled.footer`
 const FooterText = styled.p`
   font-size: 16px;
   margin: 10px 0;
-  @media (max-width: 780px) {
+  @media screen (max-width: 480px) {
     margin: 5px 0;
     font-size: 8px;
   }
