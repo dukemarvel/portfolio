@@ -18,7 +18,7 @@ const CertificationTitle = styled.h2`
     text-decoration: none; 
   }
   
-  @media (max-width: 780px) {
+  @media (max-width: 720px) {
     font-size: 14px;
   }
 `;
@@ -27,7 +27,7 @@ const IssuingOrganization = styled.h3`
   font-size: 16px;
   color: hsla(0,0%,96%,.75);
 
-  @media (max-width: 780px) {
+  @media (max-width: 720px) {
     font-size: 12px;
   }
 `;
@@ -36,13 +36,13 @@ const Date = styled.span`
   font-weight: 500;
   color: hsla(0, 0%, 96%, 0.75);
 
-  @media (max-width: 780px) {
+  @media (max-width: 720px) {
     font-size: 12px;
   }
 `;
 
 const Description = styled.p`
-  @media (max-width: 780px) {
+  @media (max-width: 720px) {
     font-size: 12px;
   }
 `;

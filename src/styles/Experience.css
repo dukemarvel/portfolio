@@ -24,8 +24,12 @@ li {
   color: white;
   border-radius: 5px;
 
-  @media (max-width: 720px) {
-    width: 250px;
+  
+}
+
+@media (max-width: 720px) {
+  li {
+    width: 220px;
   }
 }
 

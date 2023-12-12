@@ -17,7 +17,7 @@ const ProfilePicBoxContainer = styled.div`
 	border-bottom: 15px solid white;
 	border-right: 15px solid white;
 
-  @media (max-width: 780px){
+  @media (max-width: 720px){
     width: 280px;
     height: 300px;
   }
@@ -29,7 +29,7 @@ const ProfileImage = styled.img`
   border-radius: 50%;
   object-fit: cover;
 
-  @media (max-width: 780px){
+  @media (max-width: 720px){
     width: 200px;
     height: 250px;
   }

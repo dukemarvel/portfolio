@@ -25,7 +25,7 @@ const ContentContainer = styled.div`
   padding: 20px;
   gap: 10px;
 
-  @media (max-width: 780px) {
+  @media (max-width: 720px) {
     flex-direction: column;
     align-items: center;
   }
@@ -33,7 +33,7 @@ const ContentContainer = styled.div`
 
 const LeftContent = styled.div`
   flex: 1;
-  @media (max-width: 780px) {
+  @media (max-width: 720px) {
     order: 2; /* Move this content to the middle for small screens */
   }
 `;
@@ -45,7 +45,7 @@ const MiddleContent = styled.div`
   align-items: center;
   padding-left: 80px;
 
-  @media (max-width: 780px) {
+  @media (max-width: 720px) {
     order: 1; /* Move this content to the top for small screens */
     margin-bottom: 20px; /* Add some space between the profile box and other content */
     padding-left: 0px;
@@ -58,7 +58,7 @@ const RightContent = styled.div`
   justify-content: flex-end;
   
 
-  @media (max-width: 780px) {
+  @media (max-width: 720px) {
     order: 3; /* Move this content to the bottom for small screens */
   }
 `;
@@ -71,7 +71,7 @@ const Description = styled.p`
   color: white;
   
 
-  @media (max-width: 780px) {
+  @media (max-width: 720px) {
     font-size: 8px;
   }
 `;
@@ -81,7 +81,7 @@ const ProjectCounts = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (max-width: 780px) {
+  @media (max-width: 720px) {
     margin-top: 10px;
     flex-direction: row;
     justify-content: space-around;
@@ -96,7 +96,7 @@ const CountDiv = styled.div`
   line-height: 1;
   text-align: right;
 
-  @media(max-width: 780px){
+  @media(max-width: 720px){
     text-align: center;
     align-items: center;
   }
@@ -107,7 +107,7 @@ const Count = styled.div`
   font-size: 80px;
   font-weight: bold;
 
-  @media(max-width: 780px){
+  @media(max-width: 720px){
     font-size: 45px;
   }
 
@@ -118,7 +118,7 @@ const Text = styled.div`
   font-size: 24px;
   color: hsla(0,0%,96%,.75);
 
-  @media(max-width: 780px){
+  @media(max-width: 720px){
     text-align: justify;
     font-size: 12px;
     
