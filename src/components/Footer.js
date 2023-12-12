@@ -24,6 +24,7 @@ const FooterText = styled.p`
   font-size: 16px;
   margin: 10px 0;
   @media screen (max-width: 480px) {
+  @media screen (max-width: 480px) {
     margin: 5px 0;
     font-size: 8px;
   }
