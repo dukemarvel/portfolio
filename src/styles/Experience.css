@@ -1,4 +1,6 @@
 .container {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column; /* Adjusted to column layout for better structure */
   justify-content: center;
@@ -19,7 +21,7 @@ li {
   margin: 1.5em;
   cursor: pointer;
   padding: 1em;
-  background: rgb(43, 43, 43);
+  background: hsl(0, 0%, 9%);
   position: relative;
   color: white;
   border-radius: 5px;
@@ -47,7 +49,7 @@ li::before {
   left: 0%;
   top: 0;
   height: 100%; /* Adjusted height to 100% */
-  background: linear-gradient(141deg, cyan 0%, rebeccapurple 40%, deeppink 90%);
+  background: linear-gradient(141deg, cyan 0%, rebeccapurple 30%, deeppink 90%);
 }
 
 li::after {

@@ -18,9 +18,9 @@ const SkillIcon = styled.img`
   height: 50px;
   margin: 1rem;
 
-  @media screen (max-width: 720px) {
-    width: 20px;
-    height: 20px;
+  @media  (max-width: 720px) {
+    width: 40px;
+    height: 40px;
   }
 `;
 

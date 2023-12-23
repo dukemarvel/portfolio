@@ -6,7 +6,8 @@ const ProfilePicBoxContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #000000; /* Black background color */
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background color */
   border-radius: 15px 50px 30px;
   padding: 20px;
   margin-bottom: 20px; /* Adjust as needed */
@@ -18,8 +19,8 @@ const ProfilePicBoxContainer = styled.div`
 	border-right: 15px solid white;
 
   @media (max-width: 720px){
-    width: 280px;
-    height: 300px;
+    width: 260px;
+    height: 280px;
   }
 `;
 

@@ -130,7 +130,6 @@ const BoxContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #000000; /* Black background color */
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* White box shadow for white edges */
