@@ -6,14 +6,14 @@ const FooterContainer = styled.footer`
   justify-content: space-between;
   align-items: center;
   padding: 10px 45px;
-  color: white; /* Accent color for text */
-  border-top: 1px solid white; /* White line at the top */
+  color: white; 
+  border-top: 1px solid white; 
   
 
   @media (max-width: 720px){
     flex-direction: column-reverse;
     text-align: center;
-    border-top: 1px solid white; /* White line at the top */
+    border-top: 1px solid white; 
   }
 `;
 
@@ -33,7 +33,7 @@ const FooterText = styled.p`
 
 const ContactLink = styled.a`
   color: white;
-  text-decoration: none;
+  
   font-weight: bold;
   padding: 10px 10px;
 

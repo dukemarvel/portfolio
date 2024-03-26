@@ -1,11 +1,11 @@
 import React from 'react';
+import { useEffect } from "react";
 import styled from 'styled-components';
 import ProfilePicBox from './ProfilePicBox';
 import Skills from './Skills';
 import Experience from './Experience';
 import Certification from './Certification';
-
-
+import {motion, useMotionValue, useTransform, animate} from 'framer-motion';
 
 
 
@@ -13,7 +13,7 @@ const AboutSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 5%;
+  padding: 1rem 0;
   color: white;
 `;
 
@@ -65,7 +65,7 @@ const RightContent = styled.div`
 
 
 const Description = styled.p`
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 10px;
   text-align: left;
   color: white;
@@ -88,7 +88,6 @@ const ProjectCounts = styled.div`
     gap: 45px;
   }
 
-  
 `;
 
 const CountDiv = styled.div`
@@ -111,7 +110,6 @@ const Count = styled.div`
     font-size: 45px;
   }
 
-  
 `;
 
 const Text = styled.div`
@@ -126,19 +124,40 @@ const Text = styled.div`
 
 `;
 
-const BoxContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* White box shadow for white edges */
-  margin-bottom: 20px; /* Adjust as needed */
-  width: 300px;
-  height: 300px;
-`;
+const MiddleVariants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 2.5 } },
+};
+
+
+const MiddleMotion = motion(MiddleContent);
+
 
 const AboutMe = () => {
+
+  const useCountAnimation = (targetValue) => {
+    const value = useMotionValue(targetValue);
+    useEffect(() => {
+      value.set(0);
+      const controls = animate(value, targetValue, {
+        type: 'tween',
+        duration: 1, 
+      });
+      return controls.stop;
+    }, [value, targetValue]);
+    return value;
+  };
+  
+
+  const AnimatedCount = ({ children }) => {
+    const targetValue = parseInt(children, 10);
+    const count = useCountAnimation(targetValue);
+    return <div style={{ fontSize: '80px', fontWeight: 'bold' }}>{Math.round(count.get())}</div>;
+  };
+  
+  
+
+
   return (
     <AboutSection>
       <ContentContainer>
@@ -156,15 +175,19 @@ const AboutMe = () => {
           </Description>
         </LeftContent>
 
-        <MiddleContent>
+        <MiddleMotion
+        initial="hidden"
+        animate="visible"
+        variants={MiddleVariants}
+        >
           <ProfilePicBox />
-        </MiddleContent>
+        </MiddleMotion>
 
         <RightContent>
           <ProjectCounts>
             <CountDiv>
-              <Count>50+</Count>
-              <Text>Satisfied Clients</Text>
+            <Count>50+</Count>
+            <Text>Satisfied Clients</Text>
             </CountDiv>
             <CountDiv>
               <Count>40+</Count>

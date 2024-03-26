@@ -12,6 +12,7 @@ html, body, .App {
 .App {
   min-height: 100vh;
   background: rgb(43, 43, 43);
+  
 }
 
 body {
@@ -27,5 +28,7 @@ body {
 
 main {
   flex: 1 0 auto;
-  padding: 10px 10px;  
+  width: 80%;
+  margin: auto;
+  
 }

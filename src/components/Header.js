@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -30,7 +30,7 @@ const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 5%;
+  padding: 1rem 0;
   position: relative;
 `;
 
@@ -50,9 +50,9 @@ const LinksContainer = styled.div`
     border-radius: 10px;
     padding: 1rem;
     position: absolute;
-    top: 60px; // Adjusted the margin-top to top
-    left: 20%; // adjusted for better positioning
-    right: 10%; // adjusted for better positioning
+    top: 60px; 
+    left: 20%; 
+    right: 10%; 
     z-index: 9;
     align-items: center;
   }
@@ -124,7 +124,27 @@ const Hamburger = styled.div`
   }
 `;
 
+const StyledNavLink = styled(NavLink)`
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:hover {
+    color: #3498db;
+  }
+
+  &.active {
+    color: #3498db; 
+  }
+
+  @media (max-width: 720px) {
+    color: black;
+  }
+`;
+
 const MotionStyledLink = motion(StyledLink);
+
+const MotionStyledNavLink = motion(StyledNavLink);
 
 
 
@@ -141,11 +161,11 @@ const Header = () => {
 
       <LinksContainer menuOpen={menuOpen}>
       <NavLinks menuOpen={menuOpen}>
-            <MotionStyledLink to="/" whileHover={linkVariants} onClick={() => setMenuOpen(false)}>Home</MotionStyledLink>
-            <MotionStyledLink to="/aboutme" whileHover={linkVariants} onClick={() => setMenuOpen(false)}>About</MotionStyledLink>
-            <MotionStyledLink to="/projects" whileHover={linkVariants} onClick={() => setMenuOpen(false)}>Projects</MotionStyledLink>
-            <MotionStyledLink to="/ai" whileHover={linkVariants} onClick={() => setMenuOpen(false)}>AI Innovations</MotionStyledLink>
-          </NavLinks>
+  <MotionStyledNavLink to="/" exact whileHover={linkVariants} onClick={() => setMenuOpen(false)} activeClassName="active">Home</MotionStyledNavLink>
+  <MotionStyledNavLink to="/aboutme" whileHover={linkVariants} onClick={() => setMenuOpen(false)} activeClassName="active">About</MotionStyledNavLink>
+  <MotionStyledNavLink to="/projects" whileHover={linkVariants} onClick={() => setMenuOpen(false)} activeClassName="active">Projects</MotionStyledNavLink>
+  <MotionStyledNavLink to="/ai" whileHover={linkVariants} onClick={() => setMenuOpen(false)} activeClassName="active">AI Innovations</MotionStyledNavLink>
+</NavLinks>
 
           <NavLinks className="personal" menuOpen={menuOpen}>
             <a href="https://www.linkedin.com/in/joseph-blackduke" target="_blank" rel="noopener noreferrer">
